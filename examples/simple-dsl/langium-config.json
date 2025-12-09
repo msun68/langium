@@ -1,0 +1,10 @@
+{
+    "projectName": "SimpleDsl",
+    "languages": [{
+        "id": "simple-dsl",
+        "grammar": "src/language-server/simple-dsl.langium",
+        "fileExtensions": [".hello"],
+        "caseInsensitive": false
+    }],
+    "out": "src/language-server/generated"
+}

@@ -1,0 +1,31 @@
+{
+  "name": "langium-simple-dsl",
+  "displayName": "Simple DSL",
+  "version": "1.0.0",
+  "description": "Simple DSL with REST API built with Langium",
+  "homepage": "https://langium.org",
+  "license": "MIT",
+  "type": "module",
+  "main": "./out/rest-api/server.js",
+  "scripts": {
+    "build": "tsc -b tsconfig.json && node esbuild.mjs",
+    "watch": "tsc -b tsconfig.json --watch",
+    "langium:generate": "langium generate",
+    "start": "node ./out/rest-api/server.js"
+  },
+  "dependencies": {
+    "express": "~4.21.2",
+    "langium": "~4.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "~5.0.0",
+    "@types/node": "~20.17.48",
+    "esbuild": "~0.25.4",
+    "langium-cli": "~4.1.0",
+    "typescript": "~5.8.3"
+  },
+  "volta": {
+    "node": "20.19.2",
+    "npm": "10.8.2"
+  }
+}
